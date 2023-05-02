@@ -4,3 +4,51 @@
   box-sizing: border-box;
   font-size: 16px;
 }
+
+.calculator-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app-title {
+  text-align: center;
+  margin: 2rem;
+}
+
+.calculator-title {
+  text-align: center;
+  margin: 1rem;
+}
+
+.main-container {
+  outline: #000 1px solid;
+}
+
+.input-screen {
+  background-color: #868383;
+  color: #fff;
+  text-align: right;
+}
+
+.button {
+  width: 25%;
+  font-size: 0.5rem;
+}
+
+.button-zero {
+  width: 50%;
+  font-size: 0.5rem;
+}
+
+.orange {
+  background-color: rgb(255, 165, 0);
+}
+
+.height {
+  height: 2rem;
+}
+
+input::placeholder {
+  color: #fff;
+}
