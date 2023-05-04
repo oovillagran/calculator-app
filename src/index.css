@@ -29,6 +29,7 @@
   background-color: #868383;
   color: #fff;
   text-align: right;
+  width: 100%;
 }
 
 .button {
@@ -43,6 +44,7 @@
 
 .orange {
   background-color: rgb(255, 165, 0);
+  font-size: 1rem;
 }
 
 .height {
