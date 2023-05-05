@@ -4,24 +4,37 @@ import calculate from '../logic/calculate';
 
 const Calculator = () => {
   const [data, setData] = useState({
-    total: null,
+    total: 0,
     next: null,
     operation: null,
   });
 
+  const [displayValue, setDisplayValue] = useState('0');
+
   const handleClick = (buttonName) => {
-    setData(calculate(data, buttonName));
+    const result = calculate(data, buttonName);
+    setData(result);
+
+    // update the input value in the display
+
+    let newDisplayValue = '';
+    if (result.operation) {
+      newDisplayValue = `${result.total || 0} ${result.operation} ${result.next ?? ''}`;
+    } else {
+      newDisplayValue = result.next ?? result.total ?? '0';
+    }
+    setDisplayValue(newDisplayValue.toString());
   };
 
   return (
     <div className="calculator-container">
       <h2 className="calculator-title">Calculator App</h2>
-      <ChildComponent data={data} handleClick={handleClick} />
+      <ChildComponent data={data} handleClick={handleClick} displayValue={displayValue} />
     </div>
   );
 };
 
-function ChildComponent({ data, handleClick }) {
+function ChildComponent({ handleClick, displayValue }) {
   return (
     <div className="main-container">
       <input
@@ -31,8 +44,9 @@ function ChildComponent({ data, handleClick }) {
         name="name"
         pattern="[0-9+\-*/()\s]+"
         placeholder="0"
-        value={typeof data.next === 'number' ? data.next : parseFloat(data.next) || data.total || '0'}
-        onChange={(e) => handleClick({ ...data, next: e.target.value })}
+        value={displayValue}
+        readOnly
+        // onChange={(e) => handleClick(e.target.value)}
       />
       <div className="button-panel buttons-container">
         <button className="button height" type="button" onClick={() => handleClick('AC')}>
@@ -104,6 +118,7 @@ ChildComponent.propTypes = {
     operation: PropTypes.oneOfType([PropTypes.number, PropTypes.oneOf([null]), PropTypes.string]),
   }).isRequired,
   handleClick: PropTypes.func.isRequired,
+  displayValue: PropTypes.string.isRequired,
 };
 
 export default Calculator;
