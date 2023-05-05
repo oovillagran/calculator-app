@@ -8,20 +8,25 @@ const Calculator = () => {
     next: null,
     operation: null,
   });
+  const [display, setDisplay] = useState('0');
 
   const handleClick = (buttonName) => {
-    setData(calculate(data, buttonName));
+    const result = calculate(data, buttonName);
+    setData(result);
+    setDisplay(result.next || result.total || '0');
   };
 
   return (
     <div className="calculator-container">
       <h2 className="calculator-title">Calculator App</h2>
-      <ChildComponent data={data} handleClick={handleClick} />
+      <ChildComponent data={data} display={display} handleClick={handleClick} />
     </div>
   );
 };
 
-function ChildComponent({ data, handleClick }) {
+function ChildComponent({
+  display, handleClick, setDisplay,
+}) {
   return (
     <div className="main-container">
       <input
@@ -31,8 +36,8 @@ function ChildComponent({ data, handleClick }) {
         name="name"
         pattern="[0-9+\-*/()\s]+"
         placeholder="0"
-        value={typeof data.next === 'number' ? data.next : parseFloat(data.next) || data.total || '0'}
-        onChange={(e) => handleClick({ ...data, next: e.target.value })}
+        value={display}
+        onChange={(e) => setDisplay(e.target.value)}
       />
       <div className="button-panel buttons-container">
         <button className="button height" type="button" onClick={() => handleClick('AC')}>
@@ -104,6 +109,8 @@ ChildComponent.propTypes = {
     operation: PropTypes.oneOfType([PropTypes.number, PropTypes.oneOf([null]), PropTypes.string]),
   }).isRequired,
   handleClick: PropTypes.func.isRequired,
+  display: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired,
+  setDisplay: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired,
 };
 
 export default Calculator;
