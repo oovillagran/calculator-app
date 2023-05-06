@@ -54,3 +54,16 @@
 input::placeholder {
   color: #fff;
 }
+
+.quote-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quote-container {
+  outline: red 1px solid;
+  width: 70%;
+  margin: 2rem;
+  text-align: center;
+}
