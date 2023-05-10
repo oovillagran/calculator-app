@@ -47,7 +47,6 @@ function ChildComponent({ handleClick, displayValue }) {
           placeholder="0"
           value={displayValue}
           readOnly
-          // onChange={(e) => handleClick(e.target.value)}
         />
         <div className="button-panel buttons-container">
           <button style={{ background: '#ef0107' }} className="button height" type="button" onClick={() => handleClick('AC')}>
