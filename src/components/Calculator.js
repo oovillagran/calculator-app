@@ -28,7 +28,7 @@ const Calculator = () => {
 
   return (
     <div className="calculator-container">
-      <h2 className="calculator-title">Calculator App</h2>
+      <h2 style={{ color: '#fff' }} className="calculator-title">Calculator App</h2>
       <ChildComponent data={data} handleClick={handleClick} displayValue={displayValue} />
     </div>
   );

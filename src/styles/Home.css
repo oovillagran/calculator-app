@@ -1,0 +1,11 @@
+.home {
+  text-align: center;
+  margin: auto;
+  padding: auto;
+}
+
+.home-title,
+.home-welcome,
+.home-text {
+  color: #fff;
+}
