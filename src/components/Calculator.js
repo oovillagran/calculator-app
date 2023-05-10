@@ -37,75 +37,77 @@ const Calculator = () => {
 function ChildComponent({ handleClick, displayValue }) {
   return (
     <div className="main-container">
-      <input
-        className="input-screen height"
-        type="text"
-        id="input"
-        name="name"
-        pattern="[0-9+\-*/()\s]+"
-        placeholder="0"
-        value={displayValue}
-        readOnly
-        // onChange={(e) => handleClick(e.target.value)}
-      />
-      <div className="button-panel buttons-container">
-        <button className="button height" type="button" onClick={() => handleClick('AC')}>
-          AC
-        </button>
-        <button className="button height" type="button" onClick={() => handleClick('+/-')}>
-          +/-
-        </button>
-        <button className="button height" type="button" onClick={() => handleClick('%')}>
-          %
-        </button>
-        <button className="button orange height" type="button" onClick={() => handleClick('÷')}>
-          ÷
-        </button>
-        <button className="button height" type="button" onClick={() => handleClick('7')}>
-          7
-        </button>
-        <button className="button height" type="button" onClick={() => handleClick('8')}>
-          8
-        </button>
-        <button className="button height" type="button" onClick={() => handleClick('9')}>
-          9
-        </button>
-        <button className="button orange height" type="button" onClick={() => handleClick('x')}>
-          x
-        </button>
-        <button className="button height" type="button" onClick={() => handleClick('4')}>
-          4
-        </button>
-        <button className="button height" type="button" onClick={() => handleClick('5')}>
-          5
-        </button>
-        <button className="button height" type="button" onClick={() => handleClick('6')}>
-          6
-        </button>
-        <button className="button orange height" type="button" onClick={() => handleClick('-')}>
-          -
-        </button>
-        <button className="button height" type="button" onClick={() => handleClick('1')}>
-          1
-        </button>
-        <button className="button height" type="button" onClick={() => handleClick('2')}>
-          2
-        </button>
-        <button className="button height" type="button" onClick={() => handleClick('3')}>
-          3
-        </button>
-        <button className="button orange height" type="button" onClick={() => handleClick('+')}>
-          +
-        </button>
-        <button className="button-zero height" type="button" onClick={() => handleClick('0')}>
-          0
-        </button>
-        <button className="button height" type="button" onClick={() => handleClick('.')}>
-          .
-        </button>
-        <button className="button orange height" type="button" onClick={() => handleClick('=')}>
-          =
-        </button>
+      <div className="calculator">
+        <input
+          className="input-screen"
+          type="text"
+          id="input"
+          name="name"
+          pattern="[0-9+\-*/()\s]+"
+          placeholder="0"
+          value={displayValue}
+          readOnly
+          // onChange={(e) => handleClick(e.target.value)}
+        />
+        <div className="button-panel buttons-container">
+          <button style={{ background: '#ef0107' }} className="button height" type="button" onClick={() => handleClick('AC')}>
+            AC
+          </button>
+          <button className="button height" type="button" onClick={() => handleClick('+/-')}>
+            +/-
+          </button>
+          <button className="button height" type="button" onClick={() => handleClick('%')}>
+            %
+          </button>
+          <button className="button orange height" type="button" onClick={() => handleClick('÷')}>
+            ÷
+          </button>
+          <button className="button height" type="button" onClick={() => handleClick('7')}>
+            7
+          </button>
+          <button className="button height" type="button" onClick={() => handleClick('8')}>
+            8
+          </button>
+          <button className="button height" type="button" onClick={() => handleClick('9')}>
+            9
+          </button>
+          <button className="button orange height" type="button" onClick={() => handleClick('x')}>
+            x
+          </button>
+          <button className="button height" type="button" onClick={() => handleClick('4')}>
+            4
+          </button>
+          <button className="button height" type="button" onClick={() => handleClick('5')}>
+            5
+          </button>
+          <button className="button height" type="button" onClick={() => handleClick('6')}>
+            6
+          </button>
+          <button className="button orange height" type="button" onClick={() => handleClick('-')}>
+            -
+          </button>
+          <button className="button height" type="button" onClick={() => handleClick('1')}>
+            1
+          </button>
+          <button className="button height" type="button" onClick={() => handleClick('2')}>
+            2
+          </button>
+          <button className="button height" type="button" onClick={() => handleClick('3')}>
+            3
+          </button>
+          <button className="button orange height" type="button" onClick={() => handleClick('+')}>
+            +
+          </button>
+          <button className="button-zero height" type="button" onClick={() => handleClick('0')}>
+            0
+          </button>
+          <button className="button height" type="button" onClick={() => handleClick('.')}>
+            .
+          </button>
+          <button className="button orange height" type="button" onClick={() => handleClick('=')}>
+            =
+          </button>
+        </div>
       </div>
     </div>
   );

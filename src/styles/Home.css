@@ -1,10 +1,9 @@
 .home {
-  outline: red solid 2px;
-  margin: 5rem auto;
-  padding: 1rem;
+  margin: 1rem auto;
+  padding: 0.75rem;
   color: #fff;
   width: 90%;
-  line-height: 2rem;
+  line-height: 1.5rem;
 }
 
 .home-title {
