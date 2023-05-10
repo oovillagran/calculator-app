@@ -19,7 +19,11 @@
     "react/react-in-jsx-scope": "off",
     "import/no-unresolved": "off",
     "no-shadow": "off",
-    "import/no-extraneous-dependencies": ["error", {"devDependencies": false, "optionalDependencies": false, "peerDependencies": false}]
+    "import/no-extraneous-dependencies": ["error", {
+      "devDependencies": ["**/*.test.js", "**/*.spec.js", "**/setupTests.js", "src/**/*"],
+      "optionalDependencies": false,
+      "peerDependencies": false
+    }]
   },
   "overrides": [
     {
