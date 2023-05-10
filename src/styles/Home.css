@@ -1,11 +1,13 @@
 .home {
-  text-align: center;
-  margin: auto;
-  padding: auto;
+  outline: red solid 2px;
+  margin: 5rem auto;
+  padding: 1rem;
+  color: #fff;
+  width: 90%;
+  line-height: 2rem;
 }
 
-.home-title,
-.home-welcome,
-.home-text {
-  color: #fff;
+.home-title {
+  text-align: center;
+  padding: 2rem;
 }
