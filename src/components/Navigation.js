@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 export default function Navigation() {
   return (
     <>
-      <nav>
-        <ul>
+      <nav className="nav-bar">
+        <ul className="nav-container">
           <li className="nav-item">
             <Link to="/">Home</Link>
           </li>
