@@ -157,10 +157,6 @@ To run tests, execute the following command:
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] **Add Components.**
-- [ ] **Add Events.**
-- [ ] **Fetch data from API.**
-- [ ] **Full website.**
 - [ ] **Tests.**
 - [ ] **Deploy.**
 
