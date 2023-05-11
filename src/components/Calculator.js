@@ -49,7 +49,7 @@ function ChildComponent({ handleClick, displayValue }) {
           readOnly
         />
         <div className="button-panel buttons-container">
-          <button style={{ background: '#ef0107' }} className="button height" type="button" onClick={() => handleClick('AC')}>
+          <button style={{ background: '#ef0107', color: '#fff' }} className="button height" type="button" onClick={() => handleClick('AC')}>
             AC
           </button>
           <button className="button height" type="button" onClick={() => handleClick('+/-')}>
