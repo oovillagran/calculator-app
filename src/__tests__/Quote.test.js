@@ -10,11 +10,7 @@ describe('Quote', () => {
         quote: 'Lorem ipsum dolor sit amet',
       },
     ];
-    jest.spyOn(global, 'fetch').mockImplementation(() =>
-      Promise.resolve({
-        json: () => Promise.resolve(mockData),
-      })
-    );
+    jest.spyOn(global, 'fetch').mockImplementation(() => Promise.resolve({ json: () => Promise.resolve(mockData) }));
 
     render(<Quote />);
     const quoteText = await screen.findByText(/Lorem ipsum dolor sit amet/i);
@@ -38,9 +34,7 @@ describe('Quote', () => {
   });
 
   test('renders error message when data fetching fails', async () => {
-    jest.spyOn(global, 'fetch').mockImplementation(() =>
-      Promise.reject(new Error('Fetch failed'))
-    );
+    jest.spyOn(global, 'fetch').mockImplementation(() => Promise.reject(new Error('Fetch failed')));
 
     render(<Quote />);
     const errorMessage = await screen.findByText(/Something went wrong!/i);

@@ -1,9 +1,6 @@
 .nav-item {
   color: #fff;
   text-decoration: none;
-}
-
-.nav-item {
   padding-left: 1rem;
 }
 
@@ -12,9 +9,8 @@
     display: none;
   }
 
-  .nav-container{
+  .nav-container {
     text-align: center;
     margin: auto;
-    padding: auto;
-  }
+ }
 }
