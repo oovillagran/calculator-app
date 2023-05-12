@@ -56,4 +56,14 @@ describe('Calculator component', () => {
     fireEvent.click(getByText('='));
     expect(input.value).toBe('3');
   });
+
+  test('use of the AC button', () => {
+    const { getByText, getByPlaceholderText } = render(<Calculator />);
+    const input = getByPlaceholderText('0');
+    fireEvent.click(getByText('8'));
+    fireEvent.click(getByText('+'));
+    fireEvent.click(getByText('4'));
+    fireEvent.click(getByText('AC'));
+    expect(input.value).toBe('0');
+  });
 });
