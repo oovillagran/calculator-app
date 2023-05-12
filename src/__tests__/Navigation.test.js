@@ -9,7 +9,7 @@ describe('Navigation component', () => {
     const { container } = render(
       <BrowserRouter>
         <Navigation />
-      </BrowserRouter>
+      </BrowserRouter>,
     );
     const navBar = container.querySelector('.nav-bar');
     expect(navBar).toBeInTheDocument();
@@ -19,7 +19,7 @@ describe('Navigation component', () => {
     const { container } = render(
       <BrowserRouter>
         <Navigation />
-      </BrowserRouter>
+      </BrowserRouter>,
     );
     expect(container).toMatchSnapshot();
   });
