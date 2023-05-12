@@ -47,5 +47,5 @@ describe('Quote', () => {
   test('renders the quote page', () => {
     const { container } = render(<Quote />);
     expect(container).toMatchSnapshot();
-  })
+  });
 });
