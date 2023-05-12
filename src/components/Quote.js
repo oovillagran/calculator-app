@@ -27,7 +27,7 @@ function Quote() {
 
   if (isLoading) {
     return (
-      <div className="loading">
+      <div className="loading" role="alert">
         <div className="lds-ring">
           <div />
           <div />

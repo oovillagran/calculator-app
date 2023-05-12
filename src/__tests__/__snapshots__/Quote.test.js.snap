@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Quote renders the quote page 1`] = `
+<div>
+  <div
+    class="loading"
+    role="alert"
+  >
+    <div
+      class="lds-ring"
+    >
+      <div />
+      <div />
+      <div />
+      <div />
+    </div>
+  </div>
+</div>
+`;

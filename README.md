@@ -79,7 +79,7 @@ This application is built using React.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- Not available yet.
+- Here is the [live demo version](https://calculatorapp-4k84.onrender.com).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -148,6 +148,12 @@ To run tests, execute the following command:
 - GitHub: [@oovillagran](https://github.com/oovillagran)
 - Twitter: [@oovillagran](https://twitter.com/oovillagran)
 - LinkedIn: [Oscar Villagran](https://www.linkedin.com/in/oovillagran/)
+
+👤 **Elmer Lopez**
+
+- GitHub: [@memelopez](https://github.com/memelopez/)
+- Twitter: [@memelopez10](https://twitter.com/memelopez10)
+- LinkedIn: [Elmer Lopez](https://www.linkedin.com/in/elmer-lopez-51b187200/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

@@ -1,0 +1,151 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Calculator component matches snapshot 1`] = `
+<div
+  class="calculator-container"
+>
+  <h2
+    class="calculator-title"
+    style="color: rgb(255, 255, 255);"
+  >
+    Calculator App
+  </h2>
+  <div
+    class="main-container"
+  >
+    <div
+      class="calculator"
+    >
+      <input
+        class="input-screen"
+        id="input"
+        name="name"
+        pattern="[0-9+\\\\-*/()\\\\s]+"
+        placeholder="0"
+        readonly=""
+        type="text"
+        value="0"
+      />
+      <div
+        class="button-panel buttons-container"
+      >
+        <button
+          class="button height"
+          style="background: rgb(239, 1, 7); color: rgb(255, 255, 255);"
+          type="button"
+        >
+          AC
+        </button>
+        <button
+          class="button height"
+          type="button"
+        >
+          +/-
+        </button>
+        <button
+          class="button height"
+          type="button"
+        >
+          %
+        </button>
+        <button
+          class="button orange height"
+          type="button"
+        >
+          ÷
+        </button>
+        <button
+          class="button height"
+          type="button"
+        >
+          7
+        </button>
+        <button
+          class="button height"
+          type="button"
+        >
+          8
+        </button>
+        <button
+          class="button height"
+          type="button"
+        >
+          9
+        </button>
+        <button
+          class="button orange height"
+          type="button"
+        >
+          x
+        </button>
+        <button
+          class="button height"
+          type="button"
+        >
+          4
+        </button>
+        <button
+          class="button height"
+          type="button"
+        >
+          5
+        </button>
+        <button
+          class="button height"
+          type="button"
+        >
+          6
+        </button>
+        <button
+          class="button orange height"
+          type="button"
+        >
+          -
+        </button>
+        <button
+          class="button height"
+          type="button"
+        >
+          1
+        </button>
+        <button
+          class="button height"
+          type="button"
+        >
+          2
+        </button>
+        <button
+          class="button height"
+          type="button"
+        >
+          3
+        </button>
+        <button
+          class="button orange height"
+          type="button"
+        >
+          +
+        </button>
+        <button
+          class="button-zero height"
+          type="button"
+        >
+          0
+        </button>
+        <button
+          class="button height"
+          type="button"
+        >
+          .
+        </button>
+        <button
+          class="button orange height"
+          type="button"
+        >
+          =
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,4 +1,16 @@
 .nav-item {
   color: #fff;
   text-decoration: none;
+  padding-left: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .brand {
+    display: none;
+  }
+
+  .nav-container {
+    text-align: center;
+    margin: auto;
+  }
 }

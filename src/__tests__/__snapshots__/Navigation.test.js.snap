@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigation component Renders the navigation bar using a snapshot 1`] = `
+<div>
+  <nav
+    class="nav-bar navbar navbar-expand-lg navbar-dark bg-dark"
+  >
+    <div
+      class="container"
+    >
+      <a
+        class="brand navbar-brand"
+        href="/"
+      >
+        Math Magicians
+      </a>
+      <nav
+        class="navbar navbar-expand navbar-light"
+        id="responsive-navbar-nav"
+      >
+        <div
+          class="me-auto navbar-nav"
+        />
+        <div
+          class="nav-container navbar-nav"
+        >
+          <a
+            class="nav-item"
+            href="/"
+          >
+            Home
+          </a>
+          <a
+            class="nav-item"
+            href="/calculator"
+          >
+            Calculator
+          </a>
+          <a
+            class="nav-item"
+            href="/quote"
+          >
+            Quote
+          </a>
+        </div>
+      </nav>
+    </div>
+  </nav>
+</div>
+`;

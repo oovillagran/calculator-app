@@ -10,3 +10,15 @@
   text-align: center;
   padding: 2rem;
 }
+
+@media only screen and (max-width: 768px) {
+  .home-title {
+    padding: 0.5rem;
+  }
+
+  .home {
+    margin: 0.25rem;
+    line-height: 1rem;
+    font-size: 0.75rem;
+  }
+}
