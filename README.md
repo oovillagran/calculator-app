@@ -79,7 +79,7 @@ This application is built using React.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- Not available yet.
+- Here is the [live demo version](https://calculatorapp-4k84.onrender.com).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
