@@ -149,6 +149,12 @@ To run tests, execute the following command:
 - Twitter: [@oovillagran](https://twitter.com/oovillagran)
 - LinkedIn: [Oscar Villagran](https://www.linkedin.com/in/oovillagran/)
 
+👤 **Elmer Lopez**
+
+- GitHub: [@memelopez](https://github.com/memelopez/)
+- Twitter: [@memelopez10](https://twitter.com/memelopez10)
+- LinkedIn: [Elmer Lopez](https://www.linkedin.com/in/elmer-lopez-51b187200/)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
