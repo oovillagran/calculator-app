@@ -43,4 +43,9 @@ describe('Quote', () => {
 
     global.fetch.mockRestore();
   });
+
+  test('renders the quote page', () => {
+    const { container } = render(<Quote />);
+    expect(container).toMatchSnapshot();
+  })
 });
