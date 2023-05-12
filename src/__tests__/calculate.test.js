@@ -35,6 +35,16 @@ describe('Unit tests for calculate.js', () => {
     expect(result).toEqual({ total: '10', next: '-5', operation: '+' });
   });
 
+  test('should handle x button when there is a next', () => {
+    const result = calculate({ total: '12', next: '5', operation: 'x' }, '=');
+    expect(result).toEqual({ total: '60', next: null, operation: null });
+  });
+
+  test('should handle ÷ button when there is a next', () => {
+    const result = calculate({ total: '100', next: '25', operation: '÷' }, '=');
+    expect(result).toEqual({ total: '4', next: null, operation: null });
+  });
+
   test('should handle plus/minus button when there is a total', () => {
     const result = calculate({ total: '10', next: null, operation: null }, '+/-');
     expect(result).toEqual({ total: '-10', next: null, operation: null });
